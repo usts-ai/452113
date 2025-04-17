@@ -41,6 +41,14 @@ export interface Statistic {
   icon: string;
 }
 
+export interface TeamMember {
+  id: number;
+  name: string;
+  role: string;
+  avatar: string;
+  bio: string;
+}
+
 export const PROPERTIES: Property[] = [
   {
     id: 1,
@@ -206,7 +214,7 @@ export const STATISTICS: Statistic[] = [
   }
 ];
 
-export const TEAM_MEMBERS = [
+export const TEAM_MEMBERS: TeamMember[] = [
   {
     id: 1,
     name: "Émilie Durand",
