@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="IntelligenceImmoAI - La première plateforme immobilière augmentée par l'intelligence artificielle"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Polices Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Tailwind CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <!-- Framer Motion via CDN -->
+    <script src="https://unpkg.com/framer-motion@10.12.5/dist/framer-motion.js"></script>
+    
+    <title>IntelligenceImmoAI | Immobilier augmenté par l'IA</title>
+    
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      
+      /* Animations personnalisées */
+      @keyframes blob {
+        0% {
+          transform: scale(1);
+        }
+        33% {
+          transform: scale(1.1);
+        }
+        66% {
+          transform: scale(0.9);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      
+      .animate-blob {
+        animation: blob 7s infinite;
+      }
+      
+      .animation-delay-2000 {
+        animation-delay: 2s;
+      }
+      
+      .animation-delay-4000 {
+        animation-delay: 4s;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>Vous devez activer JavaScript pour utiliser cette application.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
